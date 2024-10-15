@@ -1,0 +1,80 @@
+html {
+    font-size: 1rem;
+    color: black;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.logo {
+    height: 15vh;
+    padding: 5vh 5vw;
+}
+
+a:hover {
+    background-color: aquamarine;
+    color: black;
+}
+
+a:active {
+    background-color: chartreuse;
+}
+
+.title {
+    text-align: center;
+    width: 30vw;
+    justify-content: center;
+}
+
+.title h1{
+    font-size: 3rem;
+}
+
+.picture {
+    flex-direction: column;
+}
+
+.begin {
+    display: flex;
+}
+
+.end {
+    display: flex;
+}
+
+.anchores a {
+
+    /* flex: 1; */
+    /* align-items: baseline; */
+    /* gap: 10px; */
+    /* all: unset; */
+    padding: 6px;
+    border-radius: 8px;
+    border: 0;
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+    height: 3vh;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 8vh;
+}
+
+.anchores {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    justify-content: space-evenly;
+    /* margin-left: 30vw; */
+}
+
+header {
+    border: 5px black solid;
+}
+
+nav {
+    width: 100vw;
+}
