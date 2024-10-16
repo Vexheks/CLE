@@ -93,22 +93,22 @@ section {
     justify-content: space-evenly;
 }
 
-.atencja img{
+.fazes img {
     border-radius: 5px;
     box-shadow: 3px 3px 10px black;
     margin-bottom: 3vh;
 }
 
+.first-faze {
+    height: 30vh;
+
+}
+
+.faze-2 {
+    height: 30vh;
+}
+
 .product {
-    height: 30vh;
-
-}
-
-.eerst {
-    height: 30vh;
-}
-
-.twee {
     height: 30vh;
 }
 
@@ -124,7 +124,7 @@ nav {
     box-shadow: 2px 2px 10px black;
 }
 
-#content{
+#content {
     display: flex;
     flex-direction: column;
     height: 50vh;
@@ -136,7 +136,7 @@ nav {
     color: black;
 }
 
-h2{
+h2 {
     margin-top: 5vh;
 }
 
