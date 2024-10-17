@@ -1,0 +1,7 @@
+forever(function () {
+    if (pins.A3.digitalRead()) {
+        light.setAll(0x00ff00)
+    } else {
+        light.setAll(0xff0000)
+    }
+})
