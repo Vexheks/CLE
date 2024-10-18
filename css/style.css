@@ -40,6 +40,16 @@ a {
     margin-top: 3vh;
 }
 
+.homepage {
+    padding: 0px;
+    border: 0;
+    background-color: transparent;
+}
+
+.homepage:hover {
+    background-color: transparent;
+}
+
 .begin {
     display: flex;
 }
@@ -49,7 +59,7 @@ a {
     padding: 5vh 5vw;
 }
 
-.title {
+.empty {
     align-self: center;
 }
 
@@ -63,12 +73,7 @@ a {
 
 
 /*header*/
-.title {
-    text-align: center;
-    width: 30vw;
-    justify-content: center;
-    font-size: 1.5rem;
-}
+
 
 
 
@@ -81,7 +86,11 @@ section {
 .images img {
     height: 47vh;
     width: 40vw;
-    padding: 5vh 5vw;
+}
+
+img {
+    border-radius: 8%;
+    padding: 1vh 2vw;
 }
 
 .section-container {
@@ -110,12 +119,29 @@ section {
     align-items: center;
 }
 
+.product {
+    border-radius: 13%;
+}
+
 
 
 /*footer*/
 footer {
     background-color: #c6af9c;
     border-top: 2px solid black;
+}
+
+footer a:hover {
+    background-color: #EADDCA;
+    color: black;
+}
+
+footer a:active {
+    background-color: #8a6642;
+}
+
+.team {
+    text-align: center;
 }
 
 .end {
@@ -126,6 +152,7 @@ footer {
 
 #form {
     align-self: center;
+    margin-right: 3vw;
 }
 
 /*
