@@ -13,7 +13,8 @@
     <nav>
         <section class="begin">
             <div class="picture">
-                <a href="index.html" class="homepage"><img class="logo" src="images/atencjalogo.png" alt="Team 10 logo"></a>
+                <a href="index.html" class="homepage"><img class="logo" src="images/atencjalogo.png"
+                        alt="Team 10 logo"></a>
             </div>
             <div class="project-makers">
                 <a href="raven.html">Raven</a>
@@ -25,14 +26,14 @@
 
     <header>
         <h1>
-            Contactform
+            Contact formulier
         </h1>
     </header>
 
     <main>
         <div class="center-container-contact">
             <section>
-                <p class="p">Are there any problems? Please do contact us by the following form.</p>
+                <p class="p">Zijn er problemen? Neem contact met ons op!</p>
             </section>
 
             <div class="form">
@@ -40,37 +41,37 @@
 
                     <div class="formfield">
                         <div class="field">
-                            <label for="name">Firstname:</label>
-                            <input type="name" id="name" name="name">
+                            <label for="name">Voornaam:</label>
+                            <input type="name" id="name" name="name" placeholder="Voornaam">
                         </div>
                         <div class="field">
-                            <label for="name">Lastname:</label>
-                            <input type="name" id="name" name="name">
+                            <label for="name">Achternaam:</label>
+                            <input type="name" id="name" name="name" placeholder="Achternaam">
                         </div>
                     </div>
 
                     <div class="field">
                         <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" placeholder="E-mail">
                     </div>
 
                     <div class="formfield">
                         <div class="field">
-                            <label for="city">Address</label>
-                            <input type="city" id="city" name="city">
+                            <label for="city">Adres</label>
+                            <input type="city" id="city" name="city" placeholder="Adres">
                         </div>
                         <div class="field">
-                            <label for="birthdate">Date of birth</label>
+                            <label for="birthdate">Geboortedatum</label>
                             <input type="date" id="birthdate" name="birthdate">
                         </div>
                     </div>
 
                     <div class="field">
-                        <label for="send-to">Choose the reason of your message:</label>
+                        <label for="send-to">De reden van het bericht:</label>
                     </div>
                     <div class="field">
                         <select id="send-to" name="send-to">
-                            <option value="" disabled selected>Choose...</option>
+                            <option value="" disabled selected id="placeholder">Choose...</option>
                             <option value="0">Broken Product</option>
                             <option value="1">Delivery</option>
                             <option value="2">Payment Issues</option>
@@ -79,51 +80,35 @@
                     </div>
 
                     <div class="field">
-                        <label for="question">The question</label>
+                        <label for="question">Wat is uw vraag?:</label>
 
-                        <textarea id="question" name="question"> What can we help you with? 
-
-                        </textarea>
-                    </div>
-
-                    <div class="button-container">
-                        <label for="category">Be part of our newsletter?</label>
-                        <div class="buttons">
-                            <input type="radio" id="category" name="category" value="category">
-                            <label for="category">Yes</label>
-                        </div>
-                        <div class="buttons">
-                            <input type="radio" id="category" name="category" value="category">
-                            <label for="category">No</label>
-                        </div>
+                        <textarea id="question" name="question" placeholder="Wat is uw vraag?"></textarea>
                     </div>
 
                     <div class="buttons">
                         <input type="checkbox" id="category" name="category" value="category">
-                        <label for="category">I agree with the General Terms and Conditions.</label>
+                        <label for="category">Ik ga akkoord met de privacy voorwaarden.</label>
                     </div>
 
-                    <button type="submit">Send</button>
+                    <button type="submit">Verstuur</button>
 
                 </form>
             </div>
     </main>
 
-    <footer>
-        <section class="end">
-            <div class="picture">
-                <a href="index.html" class="homepage"><img class="logo" src="images/atencjalogo.png" alt="Team 10 logo"></a>
-            </div>
-            <div class="team">
-                <p>Copyright reserved to Team 10</p>
-            </div>
-            <div id="footer-links">
-                <a href="contact.html" target="_self">Contact Form</a>
-                <a href="#FAQ" target="_self">FAQ</a>
-                <a href="#Cookies" target="_self">Cookies</a>
-                <a href="#Privacy regels" target="_self">Privacy regels</a>
-            </div>
-        </section>
+    <footer class="end">
+        <div class="picture">
+            <a href="index.html" class="homepage"><img class="logo" src="images/atencjalogo.png" alt="Team 10 logo"></a>
+        </div>
+        <div class="team">
+            <p>Copyright Team 10</p>
+        </div>
+        <div id="footer-links">
+            <a href="contact.html" target="_self">Contact Formulier</a>
+            <a href="#FAQ" target="_self">FAQ</a>
+            <a href="#Cookies" target="_self">Cookies</a>
+            <a href="#Privacy regels" target="_self">Privacy voorwaarden</a>
+        </div>
     </footer>
 </body>
 
