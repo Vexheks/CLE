@@ -53,6 +53,8 @@ a {
 
 .begin {
     display: flex;
+    justify-content: space-between;
+    margin-right: 3vw;
 }
 
 .logo {
@@ -65,9 +67,10 @@ a {
 }
 
 .project-makers {
-    flex: 1;
     align-self: center;
-
+    display: flex;
+    gap: 1vh;
+    flex-direction: row;
 }
 
 
@@ -154,15 +157,17 @@ footer a:active {
     justify-content: space-between;
 }
 
-#form {
+#footer-links {
     align-self: center;
     margin-right: 3vw;
+    display: flex;
+    gap: 1vh;
 }
 
 /*contactformulier*/
 .center-container-contact {
-    padding: 0;
-    margin: auto;
+    max-width: 80vw;
+    margin: 0 auto;
 }
 
 article a {
@@ -254,11 +259,11 @@ form textarea {
         font-size: 10px;
     }
 
-    nav {
+    .begin {
         flex-direction: column;
     }
 
-    footer {
+    .end {
         flex-direction: column;
     }
 }
