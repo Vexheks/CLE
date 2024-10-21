@@ -128,6 +128,12 @@ img {
     border-radius: 13%;
 }
 
+/*Renji*/
+
+.Renji img {
+    width: 30vw;
+}
+
 
 
 /*footer*/
@@ -224,10 +230,6 @@ button:hover {
     flex-direction: column;
     align-items: stretch;
     gap: 0.5vh;
-}
-
-.field select {
-
 }
 
 .field input {
