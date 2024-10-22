@@ -262,6 +262,10 @@ footer a:active {
 /*media*/
 @media (max-width: 480px) {
 
+    body {
+
+      }
+      
     html {
         font-size: 10px;
     }
@@ -277,5 +281,4 @@ footer a:active {
     .formfield {
         flex-direction: column;
     }
-
 }
