@@ -85,7 +85,7 @@ main {
     max-width: 100vw;
 }
 
-section {
+.phase-container {
     border-bottom: 2px solid black;
 }
 
@@ -273,4 +273,9 @@ footer a:active {
     .end {
         flex-direction: column;
     }
+    
+    .formfield {
+        flex-direction: column;
+    }
+
 }
