@@ -130,39 +130,9 @@ img {
     border-radius: 13%;
 }
 
-
-
-/*footer*/
-footer {
-    background-color: #c6af9c;
-}
-
-footer a:hover {
-    background-color: #EADDCA;
-    color: black;
-}
-
-footer a:active {
-    background-color: #8a6642;
-}
-
-.team {
-    align-self: center;
-    margin-right: 3vw;
-}
-
-.end {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#footer-links {
-    align-self: center;
-    margin-right: 3vw;
-    display: flex;
-    /* gap: 1vh; */
+/*Renji*/
+.Renji img {
+    width: 30vw;
 }
 
 /*contactformulier*/
@@ -226,10 +196,6 @@ button:hover {
     gap: 0.5vh;
 }
 
-.field select {
-    padding: 2vh;
-}
-
 .field input {
     min-width: 16vw;
 }
@@ -259,6 +225,39 @@ form textarea {
     border: 1px solid black;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/*footer*/
+footer {
+    background-color: #c6af9c;
+}
+
+footer a:hover {
+    background-color: #EADDCA;
+    color: black;
+}
+
+footer a:active {
+    background-color: #8a6642;
+}
+
+.team {
+    align-self: center;
+    margin-right: 3vw;
+}
+
+.end {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer-links {
+    align-self: center;
+    margin-right: 3vw;
+    display: flex;
+}
+
 
 /*media*/
 @media (max-width: 480px) {
