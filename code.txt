@@ -1,7 +1,45 @@
-forever(function () {
-    if (pins.A3.digitalRead()) {
-        light.setAll(0x00ff00)
-    } else {
-        light.setAll(0xff0000)
+let hasTableQuestion = false;
+
+// forever(function () {
+//     console.log(crickit.signal1.analogRead());
+//     // console.log(crickit.signal1.digitalRead());
+// })
+
+pins.A3.onEvent(PinEvent.PulseHigh, function () {
+    if (!hasTableQuestion) {
+        light.setAll(0);
     }
+});
+
+pins.A3.onEvent(PinEvent.PulseLow, function () {
+    if (!hasTableQuestion) {
+        hasTableQuestion = true;
+        setTableStatus(10, true);
+
+        for (let i = 0; i < 4; i++) {
+            pause(500);
+            light.setAll(0);
+            pause(500);
+            light.setAll(Colors.Green);
+        }
+    }
+
+});
+
+input.buttonA.onEvent(ButtonEvent.Click, function () {
+    hasTableQuestion = false;
+    setTableStatus(10, false);
 })
+
+function setTableStatus(tableNumber: number, hasQuestion: boolean) {
+    if (hasQuestion) {
+        light.setAll(Colors.Green);
+        music.baDing.play();
+        console.log(`Tafel ${tableNumber} heeft een vraag!`);
+    }
+    else {
+        light.setAll(0);
+        music.magicWand.play();
+        console.log(`Status tafel ${tableNumber} gereset!`);
+    }
+}
