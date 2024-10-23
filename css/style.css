@@ -182,6 +182,7 @@ form {
 
 button {
     padding: 2vh 3vw;
+    margin-bottom: 20px;
     border-radius: 15px;
     border: 0;
     background-color: #b2967d;
