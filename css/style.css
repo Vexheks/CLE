@@ -208,7 +208,7 @@ button:hover {
     margin: 3vh 0vw;
 }
 
-form input {
+form input,select {
     padding: 10px;
     border: 1px solid black;
     border-radius: 5px;
@@ -262,9 +262,14 @@ footer a:active {
 /*media*/
 @media (max-width: 480px) {
 
-    body {
+    a{
+        margin: 1vh 1vw;   
+    }
 
-      }
+    .center-container-contact {
+        max-width: 70vw;
+        margin: 0 auto;
+    }
       
     html {
         font-size: 10px;
@@ -280,5 +285,59 @@ footer a:active {
     
     .formfield {
         flex-direction: column;
+    }
+}
+
+/*dark mode*/
+
+@media (prefers-color-scheme: dark) {
+    html {
+        color: white;
+    }
+    body {
+        background-color: #362a1f;
+    }
+    nav {
+        background-color: #644328;
+        border-bottom: 2px solid black;;
+    }
+    a {
+        background-color: #472f1a;
+        color: white;
+    }
+    nav a:hover {
+        background-color: #caab7d;
+        color: black;
+    }
+    
+    nav a:active {
+        background-color: #8a6642;
+    }
+    footer {
+        background-color: #644328;
+    }
+    
+    footer a:hover {
+        background-color: #caab7d;
+        color: black;
+    }
+    
+    footer a:active {
+        background-color: #8a6642;
+    }
+
+    input, textarea, select{
+        background-color: rgb(70, 70, 70);
+        color: white;
+    }
+    ::placeholder{
+        color: white;
+    }
+    button {
+        background-color: #6d5037;
+        color: white;
+    }
+    button:hover{
+        background-color: #6d5037;
     }
 }
