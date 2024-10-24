@@ -1,14 +1,21 @@
 let hasTableQuestion = false;
 
-// forever(function () {
-//     console.log(crickit.signal1.analogRead());
-//     // console.log(crickit.signal1.digitalRead());
-// })
+
 
 pins.A3.onEvent(PinEvent.PulseHigh, function () {
+    let pushDuration = pins.pulseDuration() / 1000000;
     if (!hasTableQuestion) {
         light.setAll(0);
     }
+    else {
+        console.log(pushDuration);
+        if (pushDuration > 2.00) {
+            console.log("langer dan 5 sec!");
+            hasTableQuestion = false;
+            setTableStatus(10, false);
+        }
+    }
+    // console.log(pins.pulseDuration());
 });
 
 pins.A3.onEvent(PinEvent.PulseLow, function () {
@@ -23,7 +30,6 @@ pins.A3.onEvent(PinEvent.PulseLow, function () {
             light.setAll(Colors.Green);
         }
     }
-
 });
 
 input.buttonA.onEvent(ButtonEvent.Click, function () {
